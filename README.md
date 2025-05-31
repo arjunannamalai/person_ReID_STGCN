@@ -22,11 +22,7 @@ reidgpt/
 │       └── query/              # Query images for evaluation
 ├── models/                   # Saved model weights
 │   └── model1400.pth         # Pre-trained model checkpoint
-├── output/                   # Output visualizations
-│   ├── 1.png                 # Dataset visualization
-│   ├── 2.png                 # Temporal graph visualization
-│   ├── 3.png                 # Feature map visualization
-│   └── ...                   # Other result visualizations
+├── output                   # Output visualizations
 ├── person RE-Id STGCN.ipynb  # Main Jupyter notebook with implementation and visualizations
 └── train.py                  # Training script for the STGCN model
 ```
