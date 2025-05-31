@@ -11,6 +11,9 @@ Person Re-Identification is the task of matching images of the same person acros
 - Implements state-of-the-art approaches for improved accuracy in challenging scenarios
 - Demonstrates results on the MSMT17 dataset, a large-scale person Re-ID benchmark
 
+![Dataset Overview](output/dataset_visualization.png)
+*MSMT17 dataset samples and distribution*
+
 ## 🗂️ Repository Structure
 
 ```
@@ -22,7 +25,15 @@ reidgpt/
 │       └── query/              # Query images for evaluation
 ├── models/                   # Saved model weights
 │   └── model1400.pth         # Pre-trained model checkpoint
-├── output                   # Output visualizations
+├── output/                   # Output visualizations
+│   ├── dataset_visualization.png  # Dataset exploration and statistics
+│   ├── spatial_graph.png          # Spatial graph connections
+│   ├── temporal_graph.png         # Temporal graph analysis
+│   ├── STGCN Graph Modules.png    # Model architecture visualization
+│   ├── feature_analysis.png       # Feature map analysis
+│   ├── global_branch.png          # Global feature branch visualization
+│   ├── matches.png                # Re-ID matching results
+│   └── t-SNE feature.png          # Feature space visualization
 ├── person RE-Id STGCN.ipynb  # Main Jupyter notebook with implementation and visualizations
 └── train.py                  # Training script for the STGCN model
 ```
@@ -69,11 +80,17 @@ The STGCN model consists of several key components:
 3. **Temporal Graph Module**: Models relationships across frames for the same body part
 4. **Feature Fusion**: Combines spatial and temporal features for robust representation
 
-![Spatial Graph Visualization](output/3.png)
+![STGCN Architecture](output/STGCN%20Graph%20Modules.png)
+*STGCN model architecture showing spatial and temporal graph modules*
+
+![Spatial Graph Connections](output/spatial_graph.png)
 *Visualization of spatial relationships between body parts*
 
-![Temporal Graph Visualization](output/2.png)
+![Temporal Graph Analysis](output/temporal_graph.png)
 *Visualization of temporal relationships across frames*
+
+![Global Feature Branch](output/global_branch.png)
+*Global feature extraction and processing pipeline*
 
 ## ⚙️ Training
 
@@ -99,8 +116,11 @@ The notebook includes comprehensive visualizations:
 4. Temporal graph analysis
 5. Evaluation metrics on MSMT17
 
-![Dataset Visualization](output/1.png)
-*MSMT17 dataset visualization*
+![Feature Analysis](output/feature_analysis.png)
+*Detailed feature map analysis and learned representations*
 
+![Re-ID Matches](output/matches.png)
+*Sample person re-identification matching results*
 
-
+![Feature Space Visualization](output/t-SNE%20feature.png)
+*t-SNE visualization of learned feature embeddings*
