@@ -80,7 +80,7 @@ The STGCN model consists of several key components:
 3. **Temporal Graph Module**: Models relationships across frames for the same body part
 4. **Feature Fusion**: Combines spatial and temporal features for robust representation
 
-![STGCN Architecture](output/STGCN%20Graph%20Modules.png)
+![STGCN Architecture](output/architecture.png)
 *STGCN model architecture showing spatial and temporal graph modules*
 
 ![Spatial Graph Connections](output/spatial_graph.png)
